@@ -33,11 +33,15 @@ class UserController extends Controller {
   public function updateuser(Request $request, $id){
     $users = $request->all();
     var_dump($users);
-    // $data = Users::find($id);
-    // $data -> name = ;
+    $listuser = Users::find($id);
+    $listuser->id_user = $users['id_user'];
+    $listuser->name = $users['name'];
+    $listuser->age = $users['age'];
+    $listuser->date_birday = $users['date_birday'];
+    $listuser->sex = $users['sex'];
+    $listuser->address = $users['address'];
+    $listuser->save();
    
-    
-
     return redirect('/')->with('success', 'Cập nhập thành công');
   }
 }
