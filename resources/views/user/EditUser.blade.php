@@ -10,10 +10,11 @@
 <body>
     <div class="container-fluid">
     <h1>chỉnh sửa khách hàng</h1>
-    <form class="container-small">
+    <form class="container-small" method="POST">
+      
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">id người dùng</label>
-          <input type="text" class="form-control" value="<?=$title["id_user"]?>" id="exampleInputEmail1" aria-describedby="emailHelp" >
+          <input type="text" class="form-control"  value="<?=$title["id_user"]?>" id="exampleInputEmail1" aria-describedby="emailHelp" >
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">tên</label>
@@ -25,21 +26,24 @@
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">ngày sinh</label>
-            <input type="date" class="form-control" value="<?=$title["date_birday"]?>" id="exampleInputPassword1">
+            <input type="date" class="form-control"  value="<?=$title["date_birday"]?>" id="exampleInputPassword1">
           </div>
           <div class="mb-3">
             <label for="disabledSelect" class="form-label">giới tính</label>
-            <select id="disabledSelect" value="<?=$title["sex"]?>" class="form-select">
+            <select id="disabledSelect"  value="<?=$title["sex"]?>" class="form-select">
               <option>nam</option>
               <option>nữ</option>
             </select>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">địa chỉ</label>
-            <input type="text" class="form-control"  value="<?=$title["address"]?>" id="exampleInputPassword1">
+            <input type="text" class="form-control" value="<?=$title["address"]?>" id="exampleInputPassword1">
           </div>
-          <a href="/cap_nhat_khach_hang" class="btn btn-primary">cập nhật</a>
-          <a href="/" class="btn btn-primary">quay lại</a>
+          <div class="container d-flex justify-content-center mb-3">
+            <button class="btn btn-primary">Cập nhật</button>
+            <a href="/" class="btn btn-primary">quay lại</a>
+        </div>
+          
       </form>
     </div>
 </body>

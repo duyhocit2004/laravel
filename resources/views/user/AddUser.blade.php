@@ -9,7 +9,8 @@
 <body>
     <div class="container-fluid">
     <h1>thêm khách hàng</h1>
-    <form class="container-small">
+    <form class="container-small" method="post">
+      @csrf
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">id người dùng</label>
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

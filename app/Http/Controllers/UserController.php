@@ -30,7 +30,8 @@ class UserController extends Controller {
     $khachhang = Users::find($id);
     return view('user.EditUser',["title" => $khachhang]);
   }
-  public function updateuser(Request $request, $id){
+  public function updateUser(Request $request, $id){
+    
     $users = $request->all();
     var_dump($users);
     $listuser = Users::find($id);
@@ -42,6 +43,8 @@ class UserController extends Controller {
     $listuser->address = $users['address'];
     $listuser->save();
    
+    
+
     return redirect('/')->with('success', 'Cập nhập thành công');
   }
 }

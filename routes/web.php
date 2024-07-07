@@ -47,10 +47,11 @@ use App\Http\Controllers\productController;
 
 
     Route::get('/',[UserController::class,'index']);
+    Route::get('/user',[UserController::class,'index']);
 
     Route::get('/user/AddUser',[UserController::class,'create']);
     Route::post('/user/AddUser',[UserController::class,'store']);
 
-    route::get('chinh_sua_khach_hang/{id}',[UserController::class,'edituser']);
-    route::get('cap_nhat_khach_hang',[UserController::class,'edituser']);
+    Route::get('chinh_sua_khach_hang/{id}',[UserController::class,'edituser'])->name('users.edit');
+    Route::post('cap_nhat_khach_hang/{id}',[UserController::class, 'updateUser'])->name('users.update');
 
