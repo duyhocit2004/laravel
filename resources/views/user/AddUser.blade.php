@@ -30,14 +30,14 @@
           </div>
           <div class="mb-3">
             <label for="disabledSelect" class="form-label">giới tính</label>
-            <select id="disabledSelect" value="<?=$title["sex"]?>" class="form-select">
+            <select id="disabledSelect" class="form-select">
               <option>nam</option>
               <option>nữ</option>
             </select>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">địa chỉ</label>
-            <input type="text" class="form-control" value="<?=$title["address"]?>" id="exampleInputPassword1">
+            <input type="text" class="form-control" id="exampleInputPassword1">
           </div>
           <div class="container d-flex justify-content-center mb-3">
             <button class="btn btn-primary w-50">Thêm khách hàng</button>

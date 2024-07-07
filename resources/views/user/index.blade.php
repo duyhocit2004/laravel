@@ -8,6 +8,7 @@
 </head>
 <body>
     <table class="table table-success table-striped-columns">
+        <h3 class="d-flex alain-time-center">list user</h3>
         <tr>
             <td>id</td>
             <td>tên</td>
@@ -15,6 +16,7 @@
             <td>ngày sinh</td>
             <td>giới tính</td>
             <td>address</td>
+            <td>chọn</td>
         </tr>
         <?php foreach($profile as $file):?>
         <tr>     

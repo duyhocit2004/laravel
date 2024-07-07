@@ -15,13 +15,6 @@ class UserController extends Controller {
     ->get();
         return view('user.index',['profile'=>$data]) ;
   }
-    // tạo đối tượng
-    // $data = new Controller ;
-    // $data->name = $request->input('name');
-    // $data->age = $request->input('age');
-    // $data->date_birday = $request->input('date_birtday');
-    // $data->sex = $request->input('sex');
-    // $data->address = $request->input('address');
   public function create()
     {
       return view('user.AddUser');
