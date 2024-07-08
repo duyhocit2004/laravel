@@ -25,15 +25,7 @@ class UserController extends Controller {
   }
   public function updateUser(Request $request, $id){
     
-    $users = $request->all();
-    var_dump($users);
     $listuser = Users::find($id);
-    $listuser->id_user = $users['id_user'];
-    $listuser->name = $users['name'];
-    $listuser->age = $users['age'];
-    $listuser->date_birday = $users['date_birday'];
-    $listuser->sex = $users['sex'];
-    $listuser->address = $users['address'];
     $listuser->save();
    
     
